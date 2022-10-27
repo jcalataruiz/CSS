@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        ul{
+            color: red;
+            font-size: 1em;/*Se refiere al tamaño de la letra m*/
+        }
+        #lista3{
+            color: blue;
+            font-size: 2em;/*Al estar anidado el tamaño relativo de la letra lo toma de la lista superior*/
+        }
+        #lista2{
+            color: greenyellow;
+            font-size: 2em;
+        }
+        #lista4{
+            font-size: 2em;
+        }
+        #parrafo{
+            color:brown;
+        }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Hola1</li>
+      <li>Hola2</li>
+      <ul id="lista2">
+        <li>Hola3</li>
+        <li>Hola4</li>
+        <ul id="lista3">
+            <li >Hola5</li>
+            
+        </ul>
+      </ul>
+    </ul>
+    <ul id="lista4">
+        <li >Hola5</li>
+        
+    </ul>
+    <p id="parrafo">
+        Hola
+        <ul>
+            <li >Hola5</li>
+            
+        </ul>
+    </p>
+  </body>
+</html>

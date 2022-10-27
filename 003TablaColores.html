@@ -1,71 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        *{
-            box-sizing: border-box;
-            padding: 0px;
-        }
-        p{
-            color: rgb(0, 0, 255);
-            font-size: 30px;
-        }
-        .a,.b{
-            color: #f60a0a;
-            font-size: small;
-        }
-        ul{
-            color: rgb(0, 0, 0);
-            font-style: oblique;
-        }
-        table{
-            width: 400px;
-            background-color: beige;
-            border:3px solid black;
-            margin: 50px auto;
-        }
-        .impar{
-            background-color: rgba(128, 128, 128, 0.451);
-        }
-        .edad{
-            text-align: center;
-        }
-        thead{
-            font-weight: bolder;
-        }
-        td{
-            padding: 2px;            
-        }
-        
+      * {
+        box-sizing: border-box;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      p {
+        color: rgb(0, 0, 255);
+        font-size: 30px;
+      }
+      .a,
+      .b {
+        color: #f60a0a;
+        font-size: small;
+      }
+      ul {
+        color: rgb(0, 0, 0);
+        font-style: oblique;
+      }
+      table {
+        width: 400px;
+        background-color: black;       
+        margin: 50px auto;
+        /*border:1px solid black;*/
+      }
+      .impar {
+        background-color: rgb(192, 192, 192);
+      }
+      .par {
+        background-color: beige;
+      }
+      .edad {
+        text-align: center;
+      }
+      td,
+      thead {
+        border: 1px solid rgba(0, 0, 0, 0.497);
+      }
+      thead {
+        font-weight: bolder;
+        background-color: salmon;
+        color: white;
+      }
+      td {
+        padding: 2px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <table>
-        <thead>
-            <td>Nombre</td>
-            <td>Apellido</td>
-            <td>Edad</td>
-        </thead>
-        <tr class="impar">
-            <td>Pedro</td>
-            <td>Perez</td>
-            <td class="edad">23</td>
-        </tr>
-        <tr class="par">
-            <td>Ana</td>
-            <td>Lopez</td>
-            <td class="edad">35</td>
-        </tr>
-        <tr class="impar">
-            <td>Jose</td>
-            <td>Fernandez</td>
-            <td class="edad">54</td>
-        </tr>
+      <thead>
+        <td>Nombre</td>
+        <td>Apellido</td>
+        <td>Edad</td>
+      </thead>
+      <tr class="impar">
+        <td>Pedro</td>
+        <td>Perez</td>
+        <td class="edad">23</td>
+      </tr>
+      <tr class="par">
+        <td>Ana</td>
+        <td>Lopez</td>
+        <td class="edad">35</td>
+      </tr>
+      <tr class="impar">
+        <td>Jose</td>
+        <td>Fernandez</td>
+        <td class="edad">54</td>
+      </tr>
     </table>
-</body>
+  </body>
 </html>
