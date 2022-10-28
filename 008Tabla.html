@@ -6,51 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+        
       table {
         margin: auto;
         border: 1px solid rgb(0, 0, 0);
-        background-color: rgb(197, 240, 243);
+        border-collapse: none;
+        background-color: rgb(199, 199, 199);
+        width: 300px;
       }
       td {
         border: 1px solid black;
-        margin: auto;
+        padding: 0.3em;
+      }
+      td:hover{
+        background-color: bisque;
+        color: #000;
+      }
+      th {
+        padding: 0.3em;
+        text-decoration: underline;
       }
       tbody {
-        background-color: rgb(255, 223, 141);
-        color: rgb(142, 0, 0);
+        color: rgb(255, 255, 255);
       }
       tfoot {
         text-align: center;
+      }
+      .importes {
+        text-align: right;
+        padding-right: 0.75em;
+      }
+      /* .par {
+        background-color: gray;
+      }
+      .impar {
+        background-color: rgb(70, 70, 70);
+      } */
+      tbody tr:nth-child(even){
+        background-color: gray;
+      }
+      tbody tr:nth-child(odd){
+        background-color: rgb(70, 70, 70);
+      }
+      .foot {
+        border: hidden;
+      }
+      h1{
+        margin-bottom: 0.1em;
       }
     </style>
   </head>
   <body>
     <table>
       <caption>
-        Mi Tabla
+        <strong><h1>Mi Tabla</h1></strong>
       </caption>
       <thead>
         <tr>
-          <th>Columna 1</th>
-          <th>Columna 2</th>
-          <th>Columna 3</th>
+          <th>Empresa</th>
+          <th>Concepto</th>
+          <th class="importes">Importe</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Hola1</td>
-          <td>Hola2</td>
-          <td>Hola3</td>
+        <tr class="impar">
+          <td>Nestle</td>
+          <td>Chocolate</td>
+          <td class="importes">400</td>
         </tr>
-        <tr>
-          <td>Hola4</td>
-          <td>Hola5</td>
-          <td>Hola6</td>
+        <tr class="par">
+          <td>Bimbo</td>
+          <td>Pastelitos</td>
+          <td class="importes">750</td>
+        </tr>
+        <tr class="impar">
+          <td>Miguelañez</td>
+          <td>Gominolas</td>
+          <td class="importes">250</td>
+        </tr>
+        <tr class="par">
+          <td>Regma</td>
+          <td>Helados</td>
+          <td class="importes">300</td>
         </tr>
       </tbody>
       <tfoot>
         <tr>
-          <td colspan="3">Hola a todos</td>
+          <td class="foot" colspan="2">Sumatorio</td>
+          <td class="foot importes">1700</td>
         </tr>
       </tfoot>
     </table>
