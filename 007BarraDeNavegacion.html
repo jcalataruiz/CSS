@@ -10,21 +10,44 @@
         list-style-type: none;
       }
       li a {
+        color:black;
         width: 200px;
         display: block;
-        background-color: gold;
         text-decoration: none;
         padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+        background: rgb(180,58,58);
+        background: linear-gradient(313deg, rgba(180,58,58,1) 2%, rgba(207,210,52,1) 19%, rgba(252,176,69,1) 52%);
+        
+        
+      }
+      /*:hover selector que aplica cuando pasamos el puntero por encima*/
+      li a:hover{ 
+        color: white;
+        background: rgb(34,193,195);
+        background: linear-gradient(313deg, rgba(34,193,195,1) 0%, rgba(186,253,45,1) 100%);
+      }
+      h1:hover{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: red;
+      }
+      #primero{
+        border-radius: 10px 10px 0px 0px;
+      }
+      #ultimo{
+        border-radius: 0px 0px 10px 10px;
       }
     </style>
   </head>
   <body>
     <ul>
-      <li><a href="http://www.elmundo.es">El Mundo</a></li>
+      <li ><a id="primero" href="http://www.elmundo.es">El Mundo</a></li>
       <li><a href="http://www.elpais.es">El Pais</a></li>
       <li><a href="http://www.eldiariomontanes.es">El Diario Montanes</a></li>
       <li><a href="http://www.marca.com">Marca</a></li>
-      <li><a href="http://www.as.com">Diario AS</a></li>
+      <li ><a id="ultimo" href="http://www.as.com">Diario AS</a></li>
     </ul>
+    <p><h1>Este es un parrafo de prueba</h1></p>
   </body>
 </html>
